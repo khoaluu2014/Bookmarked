@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookMarked.Api.Data.Models;
 
+[Table("Books")]
 public class Book
 {
     [Key]
