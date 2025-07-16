@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BookMarked.Api.Data.Models;
 
-public class Users
+public class User
 {
     [Key]
     public int Id { get; set; }
