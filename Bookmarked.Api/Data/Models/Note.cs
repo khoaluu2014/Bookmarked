@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookMarked.Api.Data.Models;
 
+[Table("Notes")]
 public class Note
 {
     [Key]
@@ -11,6 +12,9 @@ public class Note
     public string? Thoughts { get; set; }
     public DateTime Timestamp { get; set; } = DateTime.UtcNow;
 
-    [ForeignKey]
     public int UserId { get; set; }
+    public int BookId { get; set; }
+
+    // TODO
+    // Add navigation properties
 }
