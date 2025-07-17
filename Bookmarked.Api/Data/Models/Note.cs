@@ -15,6 +15,9 @@ public class Note
     public int UserId { get; set; }
     public int BookId { get; set; }
 
-    // TODO
-    // Add navigation properties
+    [ForeignKey(nameof(UserId))]
+    public User User { get; set; } = null!;
+
+    [ForeignKey(nameof(BookId))]
+    public Book? Book { get; set; } = null!;
 }
