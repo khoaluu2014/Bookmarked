@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BookMarked.Api.DTOs;
 
-public class RegisterRequestDTO
+public class RegisterRequestDto
 {
     [Required]
     [EmailAddress]
